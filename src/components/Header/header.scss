@@ -1,0 +1,9 @@
+@import "../../index.scss";
+
+.header {
+  @include headerFooterWrapper(80px);
+}
+
+.header-text {
+  @include headerFooterText(23px, 18px);
+}

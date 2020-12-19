@@ -1,0 +1,12 @@
+@import "../../index.scss";
+
+.footer {
+  @include headerFooterWrapper(55px);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-text {
+  @include headerFooterText(0px, 14px);
+}

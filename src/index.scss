@@ -1,5 +1,23 @@
 @import "~bootstrap/scss/bootstrap";
 
+//Variables
+$main-color: #4c91ab;
+
+@mixin headerFooterWrapper($height) {
+  background-color: $main-color;
+  height: $height;
+  text-align: center;
+  width: 100%;
+}
+
+@mixin headerFooterText($top, $fontSize) {
+  top: $top;
+  color: white;
+  position: relative;
+  font-weight: bold;
+  font-size: $fontSize;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -7,9 +25,4 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
