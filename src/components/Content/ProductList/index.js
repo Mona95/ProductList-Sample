@@ -1,5 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { productsData } from "../../../data/products.js";
+import Product from "../Product";
 
 export default function ProductList() {
-  return <div>Product list</div>;
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const data = productsData();
+    setProducts(data);
+  }, []);
+
+  return <Product products={products} />;
 }

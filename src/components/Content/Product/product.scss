@@ -1,0 +1,44 @@
+@import "../../../index.scss";
+
+.product-card {
+  width: 280px;
+  margin: 10px;
+  border: 1px solid $main-color;
+  padding: 15px;
+  border-radius: 15px;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: -2px 1px 5px 0px rgba(50, 50, 50, 0.75);
+
+  img {
+    border-radius: 10px;
+    opacity: 0.6;
+  }
+
+  :hover {
+    img {
+      opacity: 1;
+      transition: 0.3s;
+    }
+    cursor: pointer;
+  }
+}
+
+.more-btn {
+  background-color: $main-color;
+  border-radius: 14px;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.desc-text {
+  display: inline-block;
+  width: 14em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 25px;
+  font-size: 15px;
+}

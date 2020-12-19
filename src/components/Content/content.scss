@@ -1,4 +1,7 @@
 .content-wrapper {
   text-align: center;
-  margin-top: 25px;
+  margin: 15px;
+  max-height: 40vm;
+  overflow-y: scroll;
+  overflow: hidden;
 }
