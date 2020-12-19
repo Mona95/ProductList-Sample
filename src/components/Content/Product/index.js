@@ -11,10 +11,10 @@ export default function Product(props) {
           <div>
             <img src={product.img} alt="outfit" width={150} height={200} />
           </div>
-          <div>
+          <div className="product-name">
             <span>{product.productName}</span>
           </div>
-          <div>
+          <div className="product-price">
             <span>{product.price} $</span>
           </div>
           <div>
