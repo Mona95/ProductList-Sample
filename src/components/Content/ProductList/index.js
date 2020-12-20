@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { productsData } from "../../../data/products.js";
+import React from "react";
+import { connect } from "react-redux";
 import Product from "../Product";
 
-export default function ProductList() {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    const data = productsData();
-    setProducts(data);
-  }, []);
-
-  return <Product products={products} />;
+function ProductList(props) {
+  return <Product products={props.products} />;
 }
+
+const mapStateToProps = (state) => ({
+  products: state.products,
+});
+
+export default connect(mapStateToProps)(ProductList);
