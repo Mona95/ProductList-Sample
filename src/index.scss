@@ -1,10 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
 
 //Variables
-$main-color: #4c91ab;
+$main-color-blue: #4c91ab;
+$main-color-orange: #fd7f34;
 
 @mixin headerFooterWrapper($height) {
-  background-color: $main-color;
+  background-color: $main-color-blue;
   height: $height;
   text-align: center;
   width: 100%;

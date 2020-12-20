@@ -15,6 +15,7 @@ function ProductDetail(props) {
           <Row>
             <Col>
               <img
+                className="details-img"
                 width={390}
                 height={500}
                 alt="preview"
@@ -32,20 +33,26 @@ function ProductDetail(props) {
               </div>
               <hr />
               <div className="details-price">
-                <span>{selectedProduct.price} $</span>
+                <span>Price : {selectedProduct.price} $</span>
               </div>
-              <div class="details-quantity">
+              <div className="details-quantity">
                 <span>Add Quantity</span>
                 <div
-                  class="value-button decrease_"
+                  className="value-button decrease_"
                   id=""
                   value="Decrease Value"
                 >
                   -
                 </div>
-                <input type="number" name="qty" id="number" min={0} value={3} />
+                <input
+                  type="number"
+                  name="qty"
+                  id="number"
+                  min={0}
+                  defaultValue={3}
+                />
                 <div
-                  class="value-button increase_"
+                  className="value-button increase_"
                   id=""
                   value="Increase Value"
                 >
@@ -53,17 +60,19 @@ function ProductDetail(props) {
                 </div>
               </div>
               <div className="details-desc">
-                <span>Description About this product</span>
+                <span className="desc-title">
+                  Description About this product
+                </span>
                 <br />
                 <span>{selectedProduct.description}</span>
               </div>
               <br />
-              <div class="details-add-btn">
-                <button class="btn-theme btn buy-btn" tabindex="0">
-                  <i class="fa fa-shopping-cart"></i> Buy Now
+              <div className="details-add-btn">
+                <button className="btn-theme btn buy-btn" tabIndex="0">
+                  Buy Now
                 </button>
-                <button class="btn-theme btn btn-success" tabindex="0">
-                  <i class="fa fa-shopping-cart"></i> Add to Cart
+                <button className="btn-theme btn btn-success" tabIndex="0">
+                  Add to Cart
                 </button>
                 <input type="hidden" name="pid" value="18" />
                 <input type="hidden" name="price" value="850" />
@@ -74,8 +83,9 @@ function ProductDetail(props) {
         </Container>
       )}
       <br />
-      <br />
-      <Link to="/">Back to Product List</Link>
+      <Link className="back-btn" to="/">
+        Back to Product List
+      </Link>
     </>
   );
 }

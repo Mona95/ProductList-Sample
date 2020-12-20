@@ -3,7 +3,7 @@
 .product-card {
   width: 280px;
   margin: 10px;
-  border: 1px solid $main-color;
+  border: 1px solid $main-color-blue;
   padding: 15px;
   border-radius: 15px;
   height: 400px;
@@ -25,7 +25,7 @@
 }
 
 .more-btn {
-  background-color: $main-color;
+  background-color: $main-color-blue;
   border-radius: 14px;
   color: white;
   border: none;
