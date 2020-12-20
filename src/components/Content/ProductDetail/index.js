@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { Cash, Cart4, ArrowReturnLeft } from "react-bootstrap-icons";
 import "./productdetail.scss";
 
 function ProductDetail(props) {
@@ -69,10 +70,10 @@ function ProductDetail(props) {
               <br />
               <div className="details-add-btn">
                 <button className="btn-theme btn buy-btn" tabIndex="0">
-                  Buy Now
+                  <Cash style={{ marginTop: -3 }} /> &nbsp; Buy Now
                 </button>
                 <button className="btn-theme btn btn-success" tabIndex="0">
-                  Add to Cart
+                  <Cart4 style={{ marginTop: -5 }} /> &nbsp; Add to Cart
                 </button>
                 <input type="hidden" name="pid" value="18" />
                 <input type="hidden" name="price" value="850" />
@@ -84,7 +85,7 @@ function ProductDetail(props) {
       )}
       <br />
       <Link className="back-btn" to="/">
-        Back to Product List
+        <ArrowReturnLeft /> &nbsp; Back to Product List
       </Link>
     </div>
   );

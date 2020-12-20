@@ -14,6 +14,7 @@
   border-radius: 15px;
   height: 380px;
   overflow: hidden;
+  background-color: #fafafa;
   box-shadow: -2px 1px 5px 0px rgba(50, 50, 50, 0.75);
   position: relative;
 
@@ -54,14 +55,21 @@
   font-size: 13px;
 }
 
+.more-btn:hover {
+  background-color: transparent;
+  color: $main-color-orange;
+  transition: 0.3s;
+}
+
 .desc-text {
   display: inline-block;
   width: 14em;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  margin-top: 25px;
-  font-size: 15px;
+  margin-top: 5px;
+  font-size: 14px;
+  color: gray;
 }
 
 .product-name {
@@ -73,4 +81,24 @@
   font-weight: bold;
   color: gray;
   margin-top: 5px;
+  text-decoration: underline;
+}
+
+.fav-button {
+  background-color: transparent;
+  border: none;
+  color: red;
+}
+
+.add-to-basket-btn {
+  background-color: transparent;
+  border: none;
+  color: green;
+  font-weight: bold;
+}
+
+.fav-button:hover,
+.add-to-basket-btn:hover {
+  transform: rotate(360deg);
+  transition: 1s;
 }

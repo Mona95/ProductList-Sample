@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import "./product.scss";
 import { setCurrentProduct } from "../../../actions/actions";
+import { Heart, Cart4 } from "react-bootstrap-icons";
 
 function Product(props) {
   const { product } = props;
@@ -21,6 +22,12 @@ function Product(props) {
       <div className="product-price">
         <span>{product.price} $</span>
       </div>
+      <button className="fav-button" title="Add to favorites">
+        <Heart />
+      </button>
+      <button className="add-to-basket-btn" title="Add to basket">
+        <Cart4 />
+      </button>
       <div>
         <span className="desc-text">{product.description}</span>
         <Link to={`/products/${product.productId}`}>
