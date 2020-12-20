@@ -11,7 +11,7 @@ function ProductDetail(props) {
   return (
     <>
       {selectedProduct && (
-        <Container>
+        <Container style={{ marginTop: 15 }}>
           <Row>
             <Col>
               <img
