@@ -1,0 +1,58 @@
+.details-quantity > span {
+  color: black;
+  margin-right: 15px;
+  font-weight: 500;
+}
+.details-quantity .value-button {
+  display: inline-flex;
+  border: 0px solid #ddd;
+  margin: 0px;
+  width: 30px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  background: #fd7f34;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #fff;
+}
+
+.details-quantity .value-button {
+  border: 0px solid #fd7f34;
+  height: 35px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.details-quantity input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #fd7f34;
+  border-bottom: 1px solid #fd7f34;
+  margin: 0px;
+  width: 50px;
+  height: 36.5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.details-add-btn {
+  margin-left: 0px;
+  margin-bottom: 15px;
+}
+
+.details-add-btn .buy-btn {
+  background-color: #fd7f34;
+  color: #fff;
+}
+.details-add-btn .btn {
+  text-transform: capitalize;
+  padding: 6px 20px;
+  border-radius: 52px;
+}
+.details-add-btn .btn {
+  margin: 0px 8px;
+}
