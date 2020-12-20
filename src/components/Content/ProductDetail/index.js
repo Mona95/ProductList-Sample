@@ -9,7 +9,7 @@ import "./productdetail.scss";
 function ProductDetail(props) {
   const { selectedProduct } = props;
   return (
-    <>
+    <div style={{ paddingBottom: 70 }}>
       {selectedProduct && (
         <Container style={{ marginTop: 15 }}>
           <Row>
@@ -86,7 +86,7 @@ function ProductDetail(props) {
       <Link className="back-btn" to="/">
         Back to Product List
       </Link>
-    </>
+    </div>
   );
 }
 

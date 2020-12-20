@@ -1,5 +1,11 @@
 @import "../../../index.scss";
 
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 .product-card {
   width: 280px;
   margin: 10px;
@@ -9,23 +15,38 @@
   height: 380px;
   overflow: hidden;
   box-shadow: -2px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  position: relative;
 
   img {
     border-radius: 10px;
-    opacity: 0.6;
+    opacity: 1;
   }
 
   :hover {
-    img {
-      opacity: 1;
-      transition: 0.3s;
-    }
     cursor: pointer;
   }
 }
 
+.product-card::before {
+  content: "NEW";
+  font-size: 13px;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  -moz-text-blink: inherit;
+  animation-name: blinker;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.5, 0, 1, 1);
+  animation-duration: 1s;
+}
+
 .more-btn {
-  background-color: $main-color-blue;
+  background-color: $main-color-orange;
   border-radius: 14px;
   color: white;
   border: none;

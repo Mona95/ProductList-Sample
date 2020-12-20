@@ -7,10 +7,14 @@ import Product from "../Product";
 function ProductList(props) {
   let productList =
     props.products &&
-    props.products.map((product) => <Product product={product} />);
+    props.products.map((product) => (
+      <Product key={product.productId} product={product} />
+    ));
   return (
     <Container>
-      <Row>{productList}</Row>
+      <Row style={{ justifyContent: "center", paddingBottom: 70 }}>
+        {productList}
+      </Row>
     </Container>
   );
 }
