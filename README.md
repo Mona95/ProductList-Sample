@@ -11,3 +11,6 @@
 - sass
 
 [Click here to check the demo](https://nervous-mccarthy-922fe6.netlify.app/)
+
+![productlist](./productlist.png)
+![productdetail](./productdetail.png)
